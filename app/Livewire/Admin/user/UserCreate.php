@@ -92,3 +92,4 @@ class UserCreate extends Component
         return view('livewire.admin.user.user-create');
     }
 }
+
