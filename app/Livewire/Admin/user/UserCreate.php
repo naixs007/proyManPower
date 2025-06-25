@@ -38,6 +38,7 @@ class UserCreate extends Component
     ];
 
     protected $messages = [
+        'telefono.confirmed' => 'El número de teléfono es obligatorio.',
         'password.confirmed' => 'Las contraseñas no coinciden.',
         'password.required' => 'La contraseña es obligatoria.',
         'password.min' => 'La contraseña debe tener al menos 8 caracteres.',
