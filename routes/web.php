@@ -3,10 +3,12 @@
 use App\Http\Controllers\CandidatoController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
+use App\Models\Oferta;
 
 Route::get('/', function () {
-    return view('welcome');
-})->middleware('auth');
+    $ofertas = Oferta::all();
+    return view('welcome', compact('ofertas'));
+})->name('home');
 
 Route::middleware([
     'auth:sanctum',
