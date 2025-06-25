@@ -12,3 +12,4 @@ class BitacoraController extends Controller
         return view('admin.bitacora.index', compact('bitacoras'));
     }
 }
+
